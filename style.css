@@ -5,18 +5,18 @@
   font-family: Lato, sans-serif;
 }
 
-.link-to-details {
+.container__link {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.link-to-details img {
+.container__link img {
   width: 100%;
 }
 
-.link-to-details .more-inf {
+.container__link .link__inf {
   font-family: fantasy, cursive;
 }
 
@@ -28,19 +28,19 @@
 
 }
 
-.centered-main-page-element {
+.container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task-text {
+.task-list__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__row {
   display: flex;
 }
 
@@ -74,7 +74,7 @@ button{
 }
 
 /* Heading */
-.list-name,
+.list__name,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -113,7 +113,7 @@ label[for="new-task"] {
 }
 
 /* Task list */
-.task-wrapper {
+.task-list__wrapper {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,51 +122,51 @@ label[for="new-task"] {
   align-items: center;
 }
 
-.task-wrapper > * {
+.task-list__wrapper > * {
   vertical-align: middle;
 }
 
-.task-wrapper > input[type="checkbox"] {
+.task-list__wrapper > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.task-wrapper > label {
+.task-list__wrapper > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-wrapper >    input[type="text"] {
+.task-list__wrapper > input[type="text"] {
   width: 226px
 }
 
-.button.delete img {
+.button.task-list__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete img:hover {
+.button.task-list__button_delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks label {
+.task-list#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list li input[type=text] {
+.task-list li input[type=text] {
   display: none;
 }
 
-.list li.edit-mode input[type="text"] {
+.task-list li.task-list__wrapper_edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.list li.edit-mode label {
+.task-list li.task-list__wrapper_edit-mode label {
   display: none;
 }
