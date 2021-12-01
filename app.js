@@ -4,7 +4,7 @@
 //Problem: User interaction does not provide the correct results.
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
-
+console.log('Последний комит содержит исправления проверяющих, прошу не обращать на него внимание! Спасибо)')
 
 // Event handling, user interaction is what starts the code execution.
 
@@ -39,14 +39,16 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className='task-list__checkbox';
     editInput.type="text";
-    editInput.className="task-list__text";
+    editInput.className="task-list__text task-list__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.classList.add("task-list__button_edit");
 
     deleteButton.classList.add("task-list__button_delete");
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className='task-list__img';
     deleteButton.appendChild(deleteButtonImg);
 
 
